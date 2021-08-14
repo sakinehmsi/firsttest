@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header_section">
+        <div class="header_content">
+            <div onclick="show_home_menu()" class="item" id="icon_home">
+                <img src="static-files/A/home_icon_website_20210420.png" alt="">
+                <div id="home_menu" class="close">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="item"><img src="static-files/A/blog_icon_website_20210420.png" alt="" id="icon_blog"></div>
+            <div class="item"><img src="static-files/A/story_icon_website_20210420.png" alt="" id="icon_story"></div>
+            <div class="item"><img src="static-files/A/donload_icon_website_20210420.png" alt="" id="icon_donload"></div>
+            <div class="item"><img src="static-files/A/leaderboard_icon_website_20210420.png" alt="" id="icon_leaderboard"></div>
+            <div class="item"><img src="static-files/A/gallery_icon_website_20210420.png" alt="" id="icon_gallery"></div>
+            <div class="item"><img src="static-files/A/features_icon_website_20210420.png" alt="" id="icon_features"></div>
+            <div class="item"><img src="static-files/A/how_icon_website_20210420.png" alt="" id="icon_how"></div>
+        </div>
+
+        <!-- menu -->
+
+    </div>
+    <!-- main -->
+    <div class="main_section">
+        <div class="main_content">
+            <div class="icons">
+                <div class="icons_content">
+                    <img class="fb" src="static-files/fb_other_website_20210302.png" alt="">
+                    <img class="tw" src="static-files/tw_other_website_20210302.png" alt="">
+                    <img class="ins" src="static-files/ins_other_website_20210302.png" alt="">
+                </div>
+            </div>
+            <div class="text">
+                <h1>Contact Us</h1>
+                <p class="l1">5 Ard Erin, Mountrath, County Laois, Ireland</p>
+                <p class="l2">Phone No: +353 57 860 27 48</p>
+                <p class="l3">Email: info[at]cloud4agri.ie</p>
+            </div>
+            <div class="form_div">
+                <form name="Form">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <input type="email" id="mail" name="mail" placeholder="Mail">
+                    <textarea id="message" name="message" placeholder="message . . ."></textarea>
+                    <div class="g-recaptcha recapcha" data-sitekey="6Le8j_sbAAAAAPdZ8ELlRMPEsS4bNqVDXRIF54NR"></div>
+                </form>
+                <button id="submitBTN" onclick="submit()">SEND</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer_section">
+        <img class="google_play_img" src="static-files/google_play_other_website_20210304.png" alt="">
+        <img class="app_store_img" src="static-files/app_store_other_website_20210304.png" alt="">
+        <p class="text p1">Contact Us</p>
+        <p class="text p2">Terms and Conditions</p>
+        <p class="text p3">Privacy Policy</p>
+    </div>
+    <!-- script -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='form.js'></script>
+</body>
+
+</html>
