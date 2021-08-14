@@ -86,7 +86,7 @@ body {
 }
 
 .icons_content {
-    width: 40%;
+    width: 35%;
     position: absolute;
     left: 30%;
     height: 100%;
@@ -115,6 +115,8 @@ body {
 .text {
     height: 24%;
     position: relative;
+    font-size: smaller;
+    margin-bottom: 6%;
 }
 
 .text h1 {
